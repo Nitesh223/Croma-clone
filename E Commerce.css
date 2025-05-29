@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: centre;
+    align-items: center;
+    
+    padding: 20px;
+}
+.logo{
+    margin-right: 20px;
+}
+nav input{
+    width: 400px;
+    height: 35px;
+    border: 1px;
+    font-weight: 500;
+    padding-left: 20px;
+    border-radius: 5px ;
+    
+}
+nav input::placeholder{
+    opacity: 0.9;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    font-size: smaller;
+    cursor: pointer;
+}
+.location{
+    font-size: smaller;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.edit{
+    font-size: 14px;
+}
+.profile{
+    cursor: pointer;
+}
+.cart{
+    cursor: pointer;
+}
