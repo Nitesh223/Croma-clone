@@ -7,11 +7,10 @@
     <title>Croma</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="E Commerce.css">
-    <script src="E Commerce.js"></script>
 </head>
 
 <body>
-
+    
     <nav class="navbar">
         <div class="logo"><img src="assets/logo.png" alt=""></div>
         <div class="nav-links">
@@ -32,41 +31,21 @@
             <span class="material-symbols-outlined cart">shopping_cart</span>
         </div>
     </nav>
-
+    
     <main>
         <section class="home">
             <div class="carousel">
-                <button class="material-symbols-outlined carousel-button prev">arrow_back_ios</button>
-                <button class="material-symbols-outlined carousel-button next">arrow_forward_ios</button>
+                <button class="material-symbols-outlined carousel-button prev" onclick="prev_image()">arrow_back_ios</button>
+                <button class="material-symbols-outlined carousel-button next" onclick="next_image()">arrow_forward_ios</button>
                 <ul>
-                    <li class="slide active">
-                        <img src="assets/HP_Rotating_Apple_MainBanner_26May2025_b9slnz.webp" alt="Apple Macbook">
-                    </li>
-                    <li class="slide">
-                        <img src="assets/HP_Rotating_CromaACs_30May2025_v2dclq.webp" alt="Croma Ac">
-                    </li>
-                    <li class="slide">
-                        <img src="assets/HP_Rotating_Fans_30May2025_gdprkg.webp" alt="Fan">
-                    </li>
-                    <li class="slide">
-                        <img src="assets/HP_Rotating_HD_30May2025_w7hgxr.webp" alt="Hard disk">
-                    </li>
-                    <li class="slide">
-                        <img src="assets/HP_Rotating_NothingPhone2aPlus_30May2025_v4a09z.webp" alt="Nothing Phone">
-                    </li>
-                    <li class="slide">
-                        <img src="assets/HP_Rotating_Ref_30May2025_lixpah.webp" alt="Refrigirator">
-                    </li>
-                    <li class="slide">
-                        <img src="assets/HP_Rotating_SW_30May2025_gy0zed.webp" alt="Boat Smart watches">
-                    </li>
-                    <li class="slide">
-                        <img src="assets/HP_Rotating_SonySB_30May2025_ayevaq.webp" alt="Sony Sound bar">
+                    <li class="slide active ">
+                        <img id="myimage" src="" alt="Apple Macbook">
                     </li>
                 </ul>
             </div>
         </section>
     </main>
+    <script src="E Commerce.js"></script>
 </body>
 
 </html>
