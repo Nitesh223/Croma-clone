@@ -13,8 +13,27 @@
 
 }
 
-
-
+@media screen and (max-width: 900px) {
+    .card-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    
+    }
+    .card-holder,
+    .card-holder2 {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 12px;
+        min-width: 600px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        justify-content: flex-start; 
+    }
+    .card-holder a,
+    .card-holder2 a {
+        flex: 0 0 auto;
+    }
+}
 @media screen and (max-width: 1085px) {
     .carousel img {
         width: 100% !important;
@@ -28,23 +47,21 @@
     .card-container {
         margin-top: 0 !important;
         padding-top: 0 !important;
-        
-        
+
+
     }
 }
-/* html,body{
-    width: 100%;
-    height: 100%;
-} */
+
 * {
     box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    /* background-color: rgb(29 30 31); */
+    background-color: rgb(29 30 31);
 
 }
 
@@ -144,10 +161,12 @@ nav input:focus {
 .cart {
     cursor: pointer;
 }
-.carousel{
+
+.carousel {
     margin-bottom: 0;
     position: relative;
 }
+
 .carousel ul {
     list-style: none;
     margin: 0;
@@ -182,8 +201,8 @@ nav input:focus {
     transform: translateY(-50%);
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
-    width: 48px;         
-    height: 48px;        
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,7 +217,7 @@ nav input:focus {
 .carousel-button.prev {
     left: 0;
     border-radius: 0px 5px 5px 0px;
-    
+
 }
 
 .carousel-button.next {
@@ -248,19 +267,42 @@ nav input:focus {
     height: 30vh;
     background-color: rgb(29 30 31);
     color: white;
+    overflow: hidden;
+     margin-left:180px;
+    
+   
+    
 }
 
 .bank-offer-card {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
     padding-top: 10px;
+    animation-name: scroll;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+   
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .bank-offer-card img {
-    max-width: 210px;
-    height: 65px;
+    display: inline-block;
+    max-width: 250px;
+    height: 80px;
+    margin: 0 5px;
+    overflow: hidden;
 }
 
 .latest-launches {
@@ -294,7 +336,7 @@ nav input:focus {
     width: 100%;
     height: 60vh;
     color: white;
-        background-color: rgb(29 30 31);
+    background-color: rgb(29 30 31);
 
 }
 
