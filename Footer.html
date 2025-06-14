@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .footer {
+            background-color: rgb(29 30 31);
+            width: 100%;
+            height: 70vh;
+            display: flex;
+        }
+
+        .footer-column1,
+        .footer-column3 {
+            width: 35%;
+            color: white;
+        }
+
+        .footer-column1 {
+            border-right: 1px solid rgb(227, 219, 219);
+        }
+
+        .footer-column3 {
+            border-left: 1px solid rgb(227, 219, 219);
+        }
+
+        .connect {
+            font-size: 1rem;
+            font-weight: 600;
+            color: rgb(255, 255, 255);
+        }
+
+        .footer-column2 {
+            width: 30%;
+        }
+
+        .email {
+            position: relative;
+            display: inline-block;
+        }
+
+        .email input {
+            width: 250px;
+            height: 45px;
+            border: 1px solid white;
+            font-weight: 500;
+            padding-left: 20px;
+            border-radius: 5px;
+            font-size: medium;
+
+        }
+
+        .email .material-symbols-outlined {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            color: black;
+            cursor: pointer;
+            opacity: 0.9;
+        }
+
+        input::placeholder {
+            opacity: 0.9;
+        }
+
+        input:focus {
+            background: white;
+            border: 1px solid white;
+            outline: none;
+        }
+
+        .Poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-icons {
+            display: flex;
+            margin: 10px 0;
+            gap: 5px;
+        }
+
+        .icon {
+            height: 40px;
+            width: 40px;
+
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: brightness(0) invert(1);
+        }
+
+        .useful-links {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            gap: 15px;
+        }
+
+        .link-container {
+            /* border: 2px solid yellow; */
+            width: 50%;
+            height: 95%;
+        }
+
+        .link-container ul,.product-names ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .link-container ul li  ,.product-names ul li {
+            margin-bottom: 10px;
+        }
+
+        .link-container ul li a ,.product-names ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            font-family:'Poppins', sans-serif ;
+        }
+        .products{
+            display: flex;
+            width: 80%;
+            height: 100%;
+            gap: 15px;
+        }
+        .product-names{
+            width: 50%;
+            height: 95%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="footer">
+        <div class="footer-column1">
+            <p class="Poppins connect">CONNECT WITH US</p>
+            <div class="email"><input type="email" placeholder="Enter Email Id">
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </div>
+            <div class="footer-icons">
+                <div class="icon"><img src="assets/Icons/youtube.png" alt="youtube"></div>
+                <div class="icon"><img src="assets/Icons/instagram.png" alt="instagram"></div>
+                <div class="icon"><img src="assets/Icons/facebook.png" alt="facebook"></div>
+                <div class="icon"><img src="assets/Icons/linkedin.png" alt="Linkdin"></div>
+                <div class="icon"><img src="assets/Icons/twitter.png" alt="twitter"></div>
+            </div>
+
+            <p class="Poppins" style="font-size: small; font-weight: 100; padding-top:20px ;">© Copyright 2025 Croma.
+                All rights reserved</p>
+        </div>
+
+        <div class="footer-column2">
+            <p class="Poppins connect">USEFUL LINKS</p>
+            <div class="useful-links">
+                <div class="link-container">
+                    <ul>
+                        <li><a href="#">About Croma</a></li>
+                        <li><a href="#">Help And Support</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Buying Guide</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">B2B Orders</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">E-Waste</a></li>
+                        <li><a href="#">Franchise Opportunity</a></li>
+                    </ul>
+                </div>
+                <div class="link-container">
+                    <ul>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Careers At Croma</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Unboxed</a></li>
+                        <li><a href="#">Gift Card</a></li>
+                        <li><a href="#">Croma E-Star</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-column3">
+            <p class="Poppins connect">PRODUCT</p>
+            <div class="products">
+                <div class="product-names">
+                    <ul>
+                        <li><a href="#">Televisions & Accessories</a></li>
+                        <li><a href="#">Home Appliances</a></li>
+                        <li><a href="#">Phones And Wearables</a></li>
+                        <li><a href="#">Computer & Tablets</a></li>
+                        <li><a href="#">Kitchen Appliances</a></li>
+                        <li><a href="#">Audio & Video</a></li>
+                        <li><a href="#">Health & Fitness</a></li>
+                        <li><a href="#">Bathroom Appliances</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="product-names"><ul>
+                        <li><a href="#">Grooming &Personal Care</a></li>
+                        <li><a href="#">Cameras & Accessories</a></li>
+                        <li><a href="#">Smart Devices</a></li>
+                        <li><a href="#">Gaming</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Top Brands</a></li>
+                        
+                    </ul></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
