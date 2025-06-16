@@ -13,6 +13,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+
         }
 
         .footer {
@@ -40,6 +41,7 @@
             font-size: 1rem;
             font-weight: 600;
             color: rgb(255, 255, 255);
+            padding: 40px;
         }
 
         .footer-column2 {
@@ -52,7 +54,8 @@
         }
 
         .email input {
-            width: 250px;
+            width: 100%;
+            max-width: 350px;
             height: 45px;
             border: 1px solid white;
             font-weight: 500;
@@ -89,13 +92,14 @@
         .footer-icons {
             display: flex;
             margin: 10px 0;
-            gap: 5px;
+            gap: 10px;
+            padding-top: 20px;
+            padding-bottom: 40px
         }
 
         .icon {
             height: 40px;
             width: 40px;
-
             border-radius: 50%;
             cursor: pointer;
         }
@@ -119,34 +123,45 @@
             /* border: 2px solid yellow; */
             width: 50%;
             height: 95%;
+            padding-left: 30px;
         }
 
-        .link-container ul,.product-names ul {
+        .link-container ul,
+        .product-names ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
 
-        .link-container ul li  ,.product-names ul li {
+        .link-container ul li,
+        .product-names ul li {
             margin-bottom: 10px;
         }
 
-        .link-container ul li a ,.product-names ul li a {
+        .link-container ul li a,
+        .product-names ul li a {
             text-decoration: none;
             color: white;
             font-size: 14px;
             font-weight: 600;
-            font-family:'Poppins', sans-serif ;
+            font-family: 'Poppins', sans-serif;
         }
-        .products{
+
+        .products {
             display: flex;
             width: 80%;
             height: 100%;
             gap: 15px;
         }
-        .product-names{
+
+        .product-names {
             width: 50%;
             height: 95%;
+            padding-left: 30px;
+        }
+
+        .column1 {
+            margin-left: 100px;
         }
     </style>
 </head>
@@ -154,20 +169,24 @@
 <body>
     <div class="footer">
         <div class="footer-column1">
-            <p class="Poppins connect">CONNECT WITH US</p>
-            <div class="email"><input type="email" placeholder="Enter Email Id">
-                <span class="material-symbols-outlined">arrow_forward</span>
-            </div>
-            <div class="footer-icons">
-                <div class="icon"><img src="assets/Icons/youtube.png" alt="youtube"></div>
-                <div class="icon"><img src="assets/Icons/instagram.png" alt="instagram"></div>
-                <div class="icon"><img src="assets/Icons/facebook.png" alt="facebook"></div>
-                <div class="icon"><img src="assets/Icons/linkedin.png" alt="Linkdin"></div>
-                <div class="icon"><img src="assets/Icons/twitter.png" alt="twitter"></div>
-            </div>
+            <div class="column1">
+                <p class="Poppins connect" style="margin-left: 0;">CONNECT WITH US</p>
+                <div class="email"><input type="email" placeholder="Enter Email Id">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+                <div class="footer-icons">
+                    <div class="icon"><img src="assets/Icons/youtube.png" alt="youtube"></div>
+                    <div class="icon"><img src="assets/Icons/instagram.png" alt="instagram"></div>
+                    <div class="icon"><img src="assets/Icons/facebook.png" alt="facebook"></div>
+                    <div class="icon"><img src="assets/Icons/linkedin.png" alt="Linkdin"></div>
+                    <div class="icon"><img src="assets/Icons/twitter.png" alt="twitter"></div>
+                </div>
 
-            <p class="Poppins" style="font-size: small; font-weight: 100; padding-top:20px ;">© Copyright 2025 Croma.
-                All rights reserved</p>
+                <p class="Poppins" style="font-size: small; font-weight: 100; padding-top:20px ;">© Copyright 2025
+                    Croma.
+                    All rights reserved
+                </p>
+            </div>
         </div>
 
         <div class="footer-column2">
@@ -213,18 +232,20 @@
                         <li><a href="#">Audio & Video</a></li>
                         <li><a href="#">Health & Fitness</a></li>
                         <li><a href="#">Bathroom Appliances</a></li>
-                        
+
                     </ul>
                 </div>
-                <div class="product-names"><ul>
+                <div class="product-names">
+                    <ul>
                         <li><a href="#">Grooming &Personal Care</a></li>
                         <li><a href="#">Cameras & Accessories</a></li>
                         <li><a href="#">Smart Devices</a></li>
                         <li><a href="#">Gaming</a></li>
                         <li><a href="#">Accessories</a></li>
                         <li><a href="#">Top Brands</a></li>
-                        
-                    </ul></div>
+
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

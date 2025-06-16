@@ -59,8 +59,12 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color:#191919;
+    background-color: #191919;
     font-family: 'Poppins', sans-serif;
+    height: 100%;
+    /* min-height: 100vh;
+    display: flex;
+    flex-direction: column; */
 }
 
 .navbar {
@@ -310,7 +314,6 @@ nav input:focus {
 }
 
 .latest-launches-card a {
-
     max-width: 36%;
 }
 
@@ -427,7 +430,7 @@ nav input:focus {
 }
 
 .product-card {
-    background-color:#121212;
+    background-color: #121212;
     border-radius: 10px;
     width: 250px;
     flex: 0 0 auto;
@@ -454,6 +457,7 @@ nav input:focus {
     color: white;
     margin: 5px 0;
 }
+
 .stars {
     color: white;
 }
@@ -473,7 +477,7 @@ nav input:focus {
 
 .tech-deals {
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     /* background-color: rgb(29 30 31); */
     position: relative;
 }
@@ -493,4 +497,236 @@ nav input:focus {
     justify-content: center;
     gap: 10px;
     margin-top: 70px;
+}
+
+.exclusive-container {
+    width: 100%;
+    height: 30vh;
+    color: white;
+}
+
+.exclusive-content {
+    width: 70%;
+    height: 80%;
+    /* background-color: yellow; */
+    margin-left: 180px;
+    display: flex;
+    gap: 5px;
+}
+
+.exclusive-content img {
+    height: 110px;
+    width: 115px;
+    margin: 8px;
+}
+
+.exclusive-card {
+    width: 100%;
+    height: 50vh;
+    padding: 20px 0;
+}
+
+.exc-card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.exc-card-content a {
+    max-width: 36%;
+}
+
+.exc-card-content img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.why-croma {
+    width: 100%;
+    height: 50vh;
+    color: white;
+}
+
+.why-croma-content {
+    height: 70%;
+    width: 65%;
+    margin-left: 180px;
+}
+
+.why-croma-content img {
+    border-radius: 10px;
+
+}
+.brands{
+    width: 100%;
+    height: 28vh;
+}
+.brand-container{
+    width: 75%;
+    height: 80%;
+     margin-left: 180px;
+     display: flex;
+     gap: 10px;
+}
+.brand-container a{
+    height: 100%;
+    width: 20%;  
+}
+.brand-container img{
+    height: 100%;
+    width: 100%;  
+    border-radius: 10px;
+}
+
+
+.footer {
+    background-color: rgb(29 30 31);
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: auto;
+}
+
+.footer-column1,
+.footer-column3 {
+    width: 35%;
+    color: white;
+}
+
+.footer-column1 {
+    border-right: 1px solid rgb(227, 219, 219);
+}
+
+.footer-column3 {
+    border-left: 1px solid rgb(227, 219, 219);
+}
+
+.connect {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    padding: 40px;
+}
+
+.footer-column2 {
+    width: 30%;
+}
+
+.email {
+    position: relative;
+    display: inline-block;
+}
+
+.email input {
+    width: 250px;
+    height: 45px;
+    border: 1px solid white;
+    font-weight: 500;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-size: medium;
+
+}
+
+.email .material-symbols-outlined {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: black;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+input::placeholder {
+    opacity: 0.9;
+}
+
+input:focus {
+    background: white;
+    border: 1px solid white;
+    outline: none;
+}
+
+.Poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-icons {
+    display: flex;
+    margin: 10px 0;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0) invert(1);
+}
+
+.useful-links {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+}
+
+.link-container {
+    /* border: 2px solid yellow; */
+    width: 50%;
+    height: 95%;
+    padding-left: 30px;
+}
+
+.link-container ul,
+.product-names ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-container ul li,
+.product-names ul li {
+    margin-bottom: 10px;
+}
+
+.link-container ul li a,
+.product-names ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.products {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    gap: 15px;
+}
+
+.product-names {
+    width: 50%;
+    height: 95%;
+    padding-left: 30px;
+}
+
+.column1 {
+    margin-left: 100px;
 }
