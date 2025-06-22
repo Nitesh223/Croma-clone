@@ -62,9 +62,6 @@ body {
     background-color: #191919;
     font-family: 'Poppins', sans-serif;
     height: 100%;
-    /* min-height: 100vh;
-    display: flex;
-    flex-direction: column; */
 }
 
 .navbar {
@@ -230,10 +227,12 @@ nav input:focus {
 .card-container {
     width: 100%;
     height: auto;
-    /* background-color: rgb(29 30 31); */
     position: relative;
-    /* padding: 0rem;
-    margin: 1rem 0rem; */
+    overflow-x: auto;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
 }
 
 .card-holder {
@@ -256,6 +255,7 @@ nav input:focus {
     justify-content: center;
     padding: 15px 0px;
 }
+
 
 .card-holder2 img {
     height: 115px;
@@ -504,10 +504,13 @@ nav input:focus {
     height: 100vh;
     background-color: yellow;
 }
-.unbox-content{
+
+.unbox-content {
     position: relative;
-      display: inline-block;
+    display: inline-block;
+    display: flex;
 }
+
 .unbox-content a {
     height: 100%;
     width: 100%;
@@ -519,19 +522,21 @@ nav input:focus {
     height: 100%;
     width: 100%;
 }
-.unbox-about{
-     position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-10%, -70%); 
-  color: white;
-  font-size: 25px;
-  font-weight: bold;
-  line-height: 28px;
-  padding: 10px 20px;
-  border-radius: 8px;
+
+.unbox-about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -70%);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 10px 20px;
+    border-radius: 8px;
 }
-.read-now{
+
+.read-now {
     padding: 10px 25px;
     font-size: 15px;
     line-height: 19px;
@@ -544,6 +549,7 @@ nav input:focus {
     border: none;
     cursor: pointer;
 }
+
 .exclusive-container {
     width: 100%;
     height: 30vh;
@@ -610,17 +616,25 @@ nav input:focus {
 .brands {
     width: 100%;
     height: 28vh;
+    display: flex;
 }
 
 .brand-container {
-    width: 80%;
-    height: 80%;
+    max-width: 75.5%;
+    height: 100%;
     margin-left: 150px;
     display: flex;
     gap: 10px;
+    overflow-x: auto;
+
 }
-.br-btn{
-     background: none;
+
+.brand-container::-webkit-scrollbar {
+    display: none;
+}
+
+.br-btn {
+    background: none;
     border: none;
     outline: none;
     box-shadow: none;
@@ -629,21 +643,20 @@ nav input:focus {
     cursor: pointer;
     color: white;
 }
-.brand-buttons-prev{
-left: 0;
+
+.brand-buttons-prev {
+    left: 0;
 }
-.brand-buttons-next{
-right: 0;
-}
-.brand-container a {
-    height: 100%;
-    width: 20%;
+
+.brand-buttons-next {
+    right: 0;
 }
 
 .brand-container img {
-    height: 100%;
-    width: 100%;
+    height: 150px;
+    width: 200px;
     border-radius: 10px;
+    flex-shrink: 0;
 }
 
 

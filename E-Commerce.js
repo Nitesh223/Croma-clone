@@ -23,3 +23,5 @@ function prev_image() {
     current = (current - 1 + carousel_images.length) % carousel_images.length
     show_image()
 }
+
+
