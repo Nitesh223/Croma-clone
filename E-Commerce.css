@@ -146,9 +146,14 @@ nav input:focus {
     gap: 3px;
     cursor: pointer;
     margin-left: 100px;
-    /* margin-right: 70px; */
 }
-
+.products{
+    font-size: smaller;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
 .edit {
     font-size: 14px;
 }
