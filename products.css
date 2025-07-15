@@ -196,3 +196,17 @@ a {
 .product-title {
     color: white;
 }
+ /* .add-to-cart {
+      background-color:  #2d2dff;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .add-to-cart:hover {
+      background-color: #2020cc;
+    } */

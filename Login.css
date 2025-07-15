@@ -11,17 +11,37 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px 15px;
+  }
+
+  .login-input input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .footer-icons .icon {
+    width: 36px;
+    height: 36px;
+  }
+}
 .login-container {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     background-color: #121212;
     height: 500px;
     border: 1px gray;
     border-radius: 5px;
 }
-
 .login-container h1 {
     text-align: center;
     color: white;
