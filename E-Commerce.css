@@ -148,13 +148,13 @@ nav input:focus {
     cursor: pointer;
     margin-left: 100px;
 }
-.products{
+.products {
     font-size: smaller;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1px !important;
     cursor: pointer;
+    gap: 3px !important;
 }
 
 a {
