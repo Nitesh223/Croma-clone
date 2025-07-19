@@ -118,7 +118,7 @@ nav input:focus {
     flex-direction: row;
     align-items: center;
     cursor: pointer;
-        gap: 3px !important;
+    gap: 3px !important;
 
 }
 
@@ -157,6 +157,7 @@ a {
     justify-content: center;
     gap: 10px;
 }
+
 .product-card {
     background-color: #121212;
     border-radius: 10px;
@@ -171,6 +172,7 @@ a {
     max-width: 100%;
     height: auto;
 }
+
 .product-title {
     font-size: 1rem;
     margin-top: 10px;
@@ -198,7 +200,8 @@ a {
 .product-title {
     color: white;
 }
- /* .add-to-cart {
+
+/* .add-to-cart {
       background-color:  #2d2dff;
       color: #fff;
       border: none;
@@ -212,7 +215,7 @@ a {
     .add-to-cart:hover {
       background-color: #2020cc;
     } */
-     
+
 .footer {
     background-color: rgb(29 30 31);
     width: 100%;
@@ -359,4 +362,19 @@ input:focus {
 
 .column1 {
     margin-left: 100px;
+}
+
+.product-button {
+    margin-left: 20px;
+    line-height: 17px;
+    box-shadow: none;
+    padding: 6px 5px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #12daa8;
+    color: black;
+    font-weight: 550;
+    font-size: 14px;
+    cursor: pointer;
 }
