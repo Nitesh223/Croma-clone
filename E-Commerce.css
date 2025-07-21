@@ -559,7 +559,20 @@ a {
     border: none;
     cursor: pointer;
 }
-
+.product-button {
+    margin-left: 50px;
+    line-height: 17px;
+    box-shadow: none;
+    padding: 4px 5px;
+    /* outline: none; */
+    border: 0.5px solid rgb(171, 157, 157);
+    border-radius: 4px;
+    background-color:#242121;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+}
 .exclusive-container {
     width: 100%;
     height: 30vh;

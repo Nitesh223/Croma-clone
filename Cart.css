@@ -140,7 +140,7 @@ a {
 }
 
 .apply-coupon {
-    max-width: 700px;
+    max-width: 800px;
     width: 100%;
     height: 70px;
     background-color: #ffff;
@@ -154,13 +154,20 @@ a {
 
 .cart-container {
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     height: 260px;
     background-color: #ffff;
     margin-top: 25px;
     border-radius: 4px;
     box-shadow: 1px 1px 3px rgb(182, 178, 178);
-
+    display: flex;
+}
+.order-summary > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 15px;
+    gap: 20px; 
 }
 
 .coupon-text {
@@ -189,10 +196,12 @@ a {
 }
 .order-summary{
     font-size: small;
+    display: flex;
+    flex-direction: column;
 
 }
 .checkout-button{
-    max-width: 250px;
+    max-width: 260px;
     width: 100%;
     line-height: 20px;
     background-color: #12DAA8;
@@ -202,4 +211,30 @@ a {
     font-weight: 550;
     cursor: pointer;
     font-size: small;
+    margin-bottom: -10px;
 }
+.cart-column1{
+    width: 18%;
+  
+}
+.cart-column2{
+width: 60%;
+
+}
+.cart-column3{
+    width: 22%;
+    
+}
+.cart-column1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.cart-button{
+    padding: 7px 15px;
+    font-size: 11px;
+    font-weight: 600;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #ffff}
