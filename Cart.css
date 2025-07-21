@@ -155,7 +155,7 @@ a {
 .cart-container {
     width: 100%;
     max-width: 800px;
-    height: 260px;
+    height: 230px;
     background-color: #ffff;
     margin-top: 25px;
     border-radius: 4px;
@@ -219,7 +219,6 @@ a {
 }
 .cart-column2{
 width: 60%;
-
 }
 .cart-column3{
     width: 22%;
@@ -237,4 +236,5 @@ width: 60%;
     font-weight: 600;
     border: 1px solid;
     border-radius: 5px;
-    background-color: #ffff}
+    background-color: #ffff
+}
