@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="products.css">
 </head>
 
-<body>
+<body onload="displayheadset()">
     <nav class="navbar">
         <div class="logo"><a href="E-Commerce.html"><img src="assets/Croma logo/logo.png" alt=""></a></div>
         <div class="nav-links">
@@ -46,9 +46,9 @@
         <span>
             <h2>Mobiles</h2>
         </span>
-        <div class="product-container">
+        <div class="product-container" id="mobile-container">
 
-            <div class="product-card">
+            <!-- <div class="product-card">
                 <a href=""><img src="Products/Mobiles/309695_0_peotee.webp" alt="Laptop"></a>
                 <div class="product-title ">Apple iPhone 16(128GB,Teal)</div>
                 <div class="price">₹74,900.00 <span><s style="color: gray; font-size:small; ">₹79,900.00</s></span>
@@ -86,7 +86,7 @@
                 <div class="price">₹15,999.00 <span><s style="color: gray; font-size:small; ">₹27,999.00</s></span>
                 </div>
                 <div class="stars">★★★★☆ <span><Button class="product-button">Add to cart</Button></span></div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -96,9 +96,9 @@
         <span>
             <h2>Headsets</h2>
         </span>
-        <div class="product-container">
+        <div class="product-container" id="headset_container">
 
-            <div class="product-card">
+            <!-- <div class="product-card">
                 <a href=""><img src="Products/Headset/309237_0_jytqwr.webp" alt="Laptop"></a>
                 <div class="product-title ">Apple AirPods 4 Active Noise Cancellation</div>
                 <div class="price">₹17,900.00 <span><s style="color: gray; font-size:small; "></s></span>
@@ -125,7 +125,7 @@
 
             <div class="product-card">
                 <a href=""><img src="Products/Headset/308484_uiqvir.webp" alt="Laptop"></a>
-                <div class="product-title ">Nothing Buds Pro 2 TWS Earbuds with Active Noise...</div>
+                <div class="product-title ">Products/Headset/308611_lcp1t9.webp.</div>
                 <div class="price">₹4,299.00 <span><s style="color: gray; font-size:small; ">₹4,999.00</s></span>
                 </div>
                 <div class="stars">★★★★☆<span><Button class="product-button">Add to cart</Button></span></div>
@@ -137,7 +137,7 @@
                 <div class="price">₹29,990.00 <span><s style="color: gray; font-size:small; ">₹34,999.00</s></span>
                 </div>
                 <div class="stars">★★★★☆<span><Button class="product-button">Add to cart</Button></span></div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -146,7 +146,7 @@
 
     <div class="product-section">
         <span>
-            <h2>Digital Watches</h2>
+            <h2  id="digitalwatch">Digital Watches</h2>
         </span>
         <div class="product-container">
 
@@ -526,5 +526,6 @@
         </div>
     </div>
 </body>
+<script src="product.js"></script>
 
 </html>
