@@ -25,4 +25,19 @@ function prev_image() {
 }
 
 
-
+// document.getElementById("Menu").addEventListener("click",function(){
+//     // document.getElementById("Menu-content").style.display = "block"
+//     var content = document.getElementById("Menu-content")
+//      console.log(content.style.display)
+//      if(content.style.display == "block" ){
+//         content.style.display = "none"
+//      }
+//      else{
+//         content.style.display = "block"
+//      }
+//   })
+document.getElementById("Menu").onclick = function() {
+    var menuContainer = document.getElementById("Menu-content");
+    // Toggle a class for show/hide
+    menuContainer.classList.toggle("show-menu");
+};
